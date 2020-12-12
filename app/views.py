@@ -14,11 +14,14 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url='login')
 def home(request):
+
     if request.user.is_authenticated:
+
         user = request.user
         form = TODOForm()
         todos = TODO.objects.filter(user = user).order_by('priority')
         return render(request , 'index.html' , context={'form' : form , 'todos' : todos})
+
 
 def login(request):
     if request.method == 'GET':
@@ -100,3 +103,4 @@ def change_todo(request , id  , status):
 def signout(request):
     logout(request)
     return redirect('login')
+
