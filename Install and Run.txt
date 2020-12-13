@@ -1,0 +1,7 @@
+1. Open cmd
+2. C:\Users\tugsa>cd desktop
+3. C:\Users\tugsa\Desktop>cd to-do-app
+4. C:\Users\tugsa\Desktop\to-do-app>python manage.py runserver
+5. Starting development server at http://127.0.0.1:8000/
+6. You must sign up and login.
+7. You can now create a todo list.

@@ -86,8 +86,10 @@
                         <th>Title</th>
                         <th>Status</th>
                         <th>Priority</th>
+                        <th>Created Date</th>
                         <th>Action</th>
-                        <th><a href='/' name="">Created Date</a></th>
+                        
+                        
                       </tr>
                     </thead>
 
@@ -106,6 +108,7 @@
                           {%endif%}
                         </td>
                         <td>{{todo.priority}}</td>
+                        <td>{{todo.date}}</td>
                         <td>
                           <a href="/delete-todo/{{todo.id}}" title="Delete" class="btn btn-danger btn-sm">Delete</a>
                           <hr>
@@ -115,7 +118,7 @@
                           <a href="/change-status/{{todo.id}}/P" title="Mark Pending" class="btn btn-warning btn-sm">Not Completed</a>
                           {%endif%}
                         </td>
-                        <td>{{todo.date}}</td>
+                        
                       </tr>
                       {%endfor%}
 

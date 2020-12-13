@@ -1,0 +1,13 @@
+To-do list project 
+ 
+Expected features are;
+- User registration
+- User login
+- Create to-do list. Each user be able to have multiple to-do lists. Each to-do list have a name.
+- List of to-do lists.
+- Delete to-do list
+- Add to-do item to existing to-do list.
+- Each to-do item have a name, description and status.
+- Mark to-do item as "Complete".
+- Order to-do items on a to-do list by create date and priority.
+- Delete to-do item from to-do list.

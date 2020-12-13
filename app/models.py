@@ -24,4 +24,5 @@ class TODO(models.Model):
     user  = models.ForeignKey(User  , on_delete= models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
     priority = models.CharField(max_length=2 , choices=priority_choices)
-    
+
+
